@@ -1,152 +1,139 @@
-<!DOCTYPE html><html lang="es">
+<!DOCTYPE html>
+<html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ruedas Al 100</title>
+  <title>Ruedas al 100</title>
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #ffffff;
+      background-color: #fff;
       color: #000;
     }
+
     header {
       background-color: #000;
-      color: #0f0;
-      padding: 1rem;
+      color: #fff;
+      padding: 1em;
       text-align: center;
     }
-    nav {
-      background-color: #0f0;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 1rem;
-      padding: 0.5rem;
-    }
+
     nav a {
-      color: #000;
+      color: #0f0;
+      margin: 0 10px;
       text-decoration: none;
       font-weight: bold;
     }
+
     section {
-      padding: 2rem;
-    }
-    .servicios, .comentarios {
-      background-color: #f4f4f4;
-    }
-    footer {
-      background-color: #000;
-      color: #fff;
+      padding: 40px 20px;
       text-align: center;
-      padding: 1rem;
     }
+
+    .fondo-inicio {
+      background-image: url('IMG-20250408-WA0018.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+
+    .contenido-inicio {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 40px;
+      border-radius: 20px;
+    }
+
     .galeria {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
+      gap: 10px;
     }
+
     .galeria img {
-      width: 200px;
-      height: auto;
-      margin: 0.5rem;
+      max-width: 300px;
+      width: 100%;
+      border-radius: 10px;
     }
-    .whatsapp {
-      color: green;
-      font-weight: bold;
+
+    footer {
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+      padding: 1em;
     }
-    .btn-whatsapp {
+
+    .whatsapp-btn {
       display: inline-block;
-      background-color: #25D366;
+      margin-top: 20px;
+      background-color: #25d366;
       color: white;
-      padding: 0.75rem 1.5rem;
+      padding: 10px 20px;
+      border-radius: 10px;
       text-decoration: none;
-      border-radius: 30px;
       font-weight: bold;
-      margin-top: 1rem;
     }
-    .btn-whatsapp:hover {
-      background-color: #1ebe57;
-    }
-    .whatsapp-float {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: #25D366;
-      color: white;
-      border-radius: 50%;
-      width: 60px;
-      height: 60px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-decoration: none;
-      font-size: 30px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-      z-index: 1000;
-    }
-    .whatsapp-float:hover {
-      background-color: #1ebe57;
-    }
-    @media (max-width: 600px) {
-      nav {
-        flex-direction: column;
-      }
-      .galeria img {
-        width: 100%;
-        max-width: 300px;
-      }
+
+    .whatsapp-btn:hover {
+      background-color: #1ebe5b;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Ruedas Al 100</h1>
-    <p>Tu taller de bicicletas de confianza</p>
-  </header>
-  <nav>
-    <a href="#inicio">Inicio</a>
-    <a href="#servicios">Servicios</a>
-    <a href="#galeria">Galería</a>
-    <a href="#comentarios">Comentarios</a>
-    <a href="#contacto">Contacto</a>
-  </nav>  <section id="inicio">
-    <h2>Bienvenido a Ruedas Al 100</h2>
-    <p>Nos especializamos en el mantenimiento, reparación y mejora de bicicletas. Con pasión por el ciclismo y años de experiencia, ofrecemos atención personalizada y soluciones eficaces para que tu bici esté siempre al 100.</p>
-  </section>  <section id="servicios" class="servicios">
-    <h2>Servicios</h2>
-    <ul>
-      <li>Mantenimiento general</li>
-      <li>Reparación de frenos y cambios</li>
-      <li>Cambio de llantas y cámaras</li>
-      <li>Centro de ruedas</li>
-      <li>Ajuste de suspensión</li>
-    </ul>
-  </section>  <section id="galeria">
-  <h2>Galería</h2>
-  <div class="galeria">
-    <img src="IMG_20250412_192948_140.jpg" alt="Trabajo en taller Ruedas al 100">
-  </div>
-</section>
-    <p>Aquí algunas fotos de nuestro trabajo:</p>
-    <img src="https://via.placeholder.com/200x150?text=Bicicleta+1" alt="Bicicleta 1">
-    <img src="https://via.placeholder.com/200x150?text=Bicicleta+2" alt="Bicicleta 2">
-    <img src="https://via.placeholder.com/200x150?text=Bicicleta+3" alt="Bicicleta 3">
-  </section>  <section id="comentarios" class="comentarios">
-    <h2>Comentarios de clientes</h2>
-    <blockquote>"Excelente servicio, mi bicicleta quedó como nueva." – Juan P.</blockquote>
-    <blockquote>"Muy profesionales y rápidos. Los recomiendo 100%." – María G.</blockquote>
-    <blockquote>"Llevo años confiando en Ruedas Al 100. Nunca fallan." – Pedro L.</blockquote>
-  </section>  <section id="contacto">
 
-<h2>Contacto</h2>
-    <p>¿Necesitas ayuda con tu bici? Escríbenos por WhatsApp:</p>
-    <p class="whatsapp">0980275767</p>
-    <a class="btn-whatsapp" href="https://wa.me/593980275767" target="_blank">Chatear por WhatsApp</a>
-  </section><a class="whatsapp-float" href="https://wa.me/593980275767" target="_blank" title="Chatea con nosotros">✉</a>
+  <header>
+    <h1>Ruedas al 100</h1>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#galeria">Galería</a>
+      <a href="#contacto">Contacto</a>
+      <a href="#comentarios">Comentarios</a>
+    </nav>
+  </header>
+
+  <section id="inicio" class="fondo-inicio">
+    <div class="contenido-inicio">
+      <h1>Bienvenido a Ruedas al 100</h1>
+      <p>Tu taller de confianza para bicicletas</p>
+    </div>
+  </section>
+
+  <section id="servicios">
+    <h2>Servicios</h2>
+    <p>Reparación, mantenimiento y personalización de bicicletas. Ajustes de frenos, cambios, limpieza profunda y más.</p>
+  </section>
+
+  <section id="galeria">
+    <h2>Galería</h2>
+    <div class="galeria">
+      <img src="IMG_20250412_192948_140.jpg" alt="Trabajo en taller Ruedas al 100">
+    </div>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>¿Tienes dudas o quieres agendar una cita? ¡Escríbenos por WhatsApp!</p>
+    <a class="whatsapp-btn" href="https://wa.me/593980275767" target="_blank">Escribir al WhatsApp</a>
+  </section>
+
+  <section id="comentarios">
+    <h2>Comentarios</h2>
+    <p>Lo que nuestros clientes opinan sobre nosotros:</p>
+    <p><em>"Excelente servicio, mi bici quedó como nueva."</em></p>
+    <p><em>"Muy profesionales y rápidos. Recomendado 100%."</em></p>
+  </section>
 
   <footer>
-    <p>&copy; 2025 Ruedas Al 100. Todos los derechos reservados.</p>
+    <p>&copy; 2025 Ruedas al 100</p>
   </footer>
+
 </body>
 </html>
